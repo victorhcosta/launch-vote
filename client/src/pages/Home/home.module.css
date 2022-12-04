@@ -1,0 +1,30 @@
+.inputBox {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.input {
+    width: 360px;
+}
+
+.warning {
+    color: var(--warning);
+}
+
+.btns {
+    display: flex;
+    gap: 8px;
+}
+
+.btn {
+    border: var(--primary);
+    background-color: var(--primary);
+	color: var(--light);
+    padding: 0.5rem;
+	border-radius: 8px;
+}
+
+.btn:hover {
+    cursor: pointer;
+}

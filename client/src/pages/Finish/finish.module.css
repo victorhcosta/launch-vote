@@ -1,0 +1,15 @@
+.divider {
+	width: 100%;
+}
+
+.btn {
+	border: var(--danger);
+	background-color: var(--danger);
+	color: var(--light);
+	padding: 0.5rem;
+	border-radius: 8px;
+}
+
+.btn:hover {
+    cursor: pointer;
+}

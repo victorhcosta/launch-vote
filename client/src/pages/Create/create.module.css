@@ -1,0 +1,43 @@
+.group {
+	display: flex;
+	flex-direction: column;
+	gap: 5px;
+}
+
+.input {
+	width: 360px;
+}
+
+.options {
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: 15px;
+}
+
+.option {
+	margin: initial;
+}
+
+.btn {
+    border: var(--primary);
+    background-color: var(--primary);
+	color: var(--light);
+    padding: 0.5rem;
+	border-radius: 8px;
+}
+
+.btn:hover {
+    cursor: pointer;
+}
+
+.btnDanger {
+    border: var(--danger);
+    background-color: var(--danger);
+	color: var(--light);
+    padding: 0.5rem;
+	border-radius: 8px;
+}
+
+.btnDanger:hover {
+    cursor: pointer;
+}

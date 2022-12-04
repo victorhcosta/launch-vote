@@ -1,0 +1,27 @@
+version: '3'
+
+services:
+  postgres:
+    image: postgres
+    networks:
+      - launchsurveynetwork
+    environment:
+      POSTGRES_USER: "${TYPEORM_USERNAME}"
+      POSTGRES_PASSWORD: "${TYPEORM_PASSWORD}"
+      POSTGRES_DB: "${TYPEORM_DATABASE}"
+    ports:
+      - '${TYPEORM_PORT}:${TYPEORM_PORT}'
+    logging:
+      options:
+        max-size: 10m
+        max-file: "3"
+    volumes:
+      - postgres:/var/launchsurvey/postgres/data
+
+networks:
+  launchsurveynetwork:
+    driver: bridge
+
+volumes:
+  postgres:
+    driver: local
